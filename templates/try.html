@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static',filename='stylesheets/style-for-try.css') }}">
+        <link rel="icon" href="{{ url_for('static',filename='favicon.ico') }}">
+        <title>Try Text Moderator</title>
+    </head>
+    <body>
+            <div class="navigation">
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-links">
+                    <a href="mission.html">Mission</a>
+                </div>
+                <div class="nav-links">
+                    <a href="try.html">Try our technology</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <p>Review any page for hate speech or offensive language:</p>
+        <form class="form" method="POST"> 
+              <input class="SearchBox" name="Text" type="text" autocomplete="off" placeholder="Paste URL like https:\\example.com or plain text like hello I am Jane doe" maxlength="500"/>
+              <button type="submit" class="searchButton">Go</button>
+        </form>
+        <br>
+        <br>
+        <p>{{working}}</p>
+        <p>{{sc}}</p>
+        <p>{{msg}}</p>
+        <!---{% if done==True %}
+          <div class='Output'>
+             <p>We’re working hard to detect harmful online content. Please review these findings and give your feedback below.</p>
+             <h2>Verdict:</h2>
+             {% if safe %}
+              <p>Content looks good!</p>
+             {% endif %}
+             <p>This page may contain:</p>
+             <br>
+             <br>
+             {% if hate %}
+               <p> Hate speech: {{probability[0][0]*100}} % likely</p>
+             {% endif %}
+             <p> Offensive language: {{probability[0][2]*100}} % likely</p>
+          </div>
+        {% endif %}--->
+    </body>
+</html>

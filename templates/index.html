@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='stylesheets/style.css') }}">
+    <link rel="icon" href="{{ url_for('static',filename='favicon.ico') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Text Moderator-An AI powered moderator system.</title>
+</head>
+<body>
+    <section class="First">
+           <div class="navigation">
+               <div class="nav-links">
+                   <a href="index.html">Home</a>
+                </div>
+               <div class="nav-links">
+                  <a href="mission.html">Mission</a>
+                </div>
+                <div class="nav-links">
+                   <a href="try.html">Try our technology</a>
+                </div>
+            </div>  
+
+       <h1>An AI powered content moderation system <br>to make Internet a better place.</h1>
+       <br>
+       <br>
+       <br>
+       <p>The Internet is flooded with information.<br> Our goal is to give you a better understanding of<br>this information so that you consume the right <br>content.</p>
+       <div class='First-section'>
+          <img src="{{ url_for('static',filename='circle-cropped.png')}}"" width="500" height="400">
+       </div>
+    </section>
+
+    <section class="Mid">
+        <div class='Mid-section'>
+            <h2>Why content moderation?</h2>
+            <p>
+              With content moderation, your team can gain actionable insights about the behavior and opinions of your users and customers.
+            </p>
+            <br>
+            <br>
+            <p>A scalable content moderation process lets you publish high volumes of user-generated content while protecting your reputation and<br>your customers.</p>
+            <img src="{{ url_for('static',filename='content.jpg')}}"" width="350" height="540">
+        </div>
+    </section>
+    
+    <section class="Final">
+            <div class='Final-section'>
+                <h2>Okay,but why AI?</h2>
+                <p>According to the World Economic Forum, by 2025,<br>an estimated 463 exabytes of data will be created each day.<br> That's the equivalent of 2.1 million DVDs!</p>
+                <br>
+                <br>
+                <p>The sheer quantity of user-generated content makes<br>it difficult for humans to keep pace.</p>
+                <br>
+                <p>This is why using AI as an aid for human agents, rather than<br>a replacement, is ideal.</p>
+                <img src="{{ url_for('static',filename='AI-Content-Moderation.jpg')}}"" width="430" height="440">
+            </div>
+    </section>
+</body>
+</html>
