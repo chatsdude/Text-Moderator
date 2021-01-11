@@ -1,0 +1,103 @@
+
+h1 {
+    color: dodgerblue;
+    margin-left: 75px;
+    font-size: 2.7em;
+    font-family: 'Montserrat', sans-serif;
+  }
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    color: black;
+    margin-left: 75px;
+    font-family: 'Ubuntu', sans-serif;  
+    font-size: 1.7em;
+}
+hr{
+    border-color: dodgerblue;
+    position: relative;
+    bottom: 75px;
+}
+.First-section img{
+    position: relative;
+    left: 800px;
+    right: 600px;
+    bottom: 75px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.navigation{
+    display: flex;
+    padding: 50px;
+    position: relative;
+}
+.nav-links{
+    margin-right: 35px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    position: relative;
+    left: 900px;
+}
+.nav-links a {
+    color: cadetblue;
+    text-decoration: None;
+    transition: color 0.5s;
+    border-bottom: 1px solid transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-links:hover{
+    border-bottom: 0.5px solid grey;
+}
+.nav-links a:hover{
+    color: black;
+}
+.image-after-hr img{
+    position: relative;
+    right: 800px;
+    
+}
+.Mid-section  h2{
+    color: dodgerblue;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+.Mid-section img{
+    margin-left: 75px;
+    position: relative;
+    bottom: 24em;
+    left: 1em;
+    right: 1em;
+}
+.Mid-section p{
+    text-align: center;
+    margin-left: 500px;
+}
+
+.Final-section h2{
+    color: #1e90ff;
+    margin-left: 75px;
+    position: relative;
+    bottom: 8em;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+.Final-section img{
+    position: relative;
+    left: 50em;
+    right: 120em;
+    bottom: 34em;
+}
+.Bold p{
+    position: relative;
+    bottom: 15em;
+    font-size: 1.7em;
+    margin-left: 75px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.Final-section p{
+    position: relative;
+    bottom: 9em;
+}
