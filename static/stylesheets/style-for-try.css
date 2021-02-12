@@ -46,7 +46,17 @@ p{
       height: 39px;
       margin-left: 75px;
   }
-   
+
+  .Yes{
+      margin-left: 75px;
+  }
+  .No{
+    margin-left: 75px;
+}
+
 .Output{
-    background-color: #0a043c;
+    background-color: #1a508b;
+    color: white;
+    width: auto;
+    margin-left: 75px;
 }
