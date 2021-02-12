@@ -30,21 +30,32 @@
         <p>{{working}}</p>
         <p>{{sc}}</p>
         <p>{{msg}}</p>
-        <!---{% if done==True %}
+        {% if done %}
           <div class='Output'>
-             <p>We’re working hard to detect harmful online content. Please review these findings and give your feedback below.</p>
-             <h2>Verdict:</h2>
+             <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Verdict:</h2>
              {% if safe %}
-              <p>Content looks good!</p>
+              <p style="color: white;">Content looks good!</p>
              {% endif %}
-             <p>This page may contain:</p>
-             <br>
              <br>
              {% if hate %}
-               <p> Hate speech: {{probability[0][0]*100}} % likely</p>
+               <p style="color: white;">This page may contain:</p>
+               <p style="color: white;"> Hate speech: {{probability[0][0]*100}} % likely</p>
              {% endif %}
-             <p> Offensive language: {{probability[0][2]*100}} % likely</p>
+             {% if off %}
+               <p style="color: white;">This page may contain:</p>
+               <p style="color: white;"> Offensive language: {{probability[0][2]*100}} % likely</p>
+             {% endif %}
+             <br>
+             <p style="color: white;">We’re working hard to detect harmful online content. Please review these findings and give your feedback below.</p>
+             <p style="color: white;">Do you agree with this review?</p>
+             <form class="Feedback" method="POST">
+                <button type="submit" class="Yes" name="button" value="Yes">Yes</button>
+                <button type="submit" class="No" name="button" value="No">No</button>
+             </form> 
+             {% if thank %}
+               {{thank}}
+             {% endif %}      
           </div>
-        {% endif %}--->
+        {% endif %}
     </body>
 </html>
